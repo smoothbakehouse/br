@@ -226,6 +226,14 @@ img {
   pointer-events: none;
 }
 
+body {
+  visibility: hidden;
+}
+
+body.loaded {
+  visibility: visible;
+}
+
 
 
 /* =========================================================
@@ -416,5 +424,6 @@ body {
 button:active {
   transform: scale(.97);
 }
+
 
 
