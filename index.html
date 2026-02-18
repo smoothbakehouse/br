@@ -869,13 +869,10 @@ window.addEventListener("load", () => {
   splash.classList.add("show");
 
   setTimeout(() => {
-    splash.classList.add("splash-hide");
-
-    // 👇 LIBERA VISIBILIDADE DO APP
-    document.body.classList.add("app-ready");
+    splash.style.opacity = "0";
 
     setTimeout(() => splash.remove(), 600);
-  }, 1200);
+  }, 1300);
 });
 </script>
 
@@ -883,6 +880,7 @@ window.addEventListener("load", () => {
 
 </body>
 </html>
+
 
 
 
