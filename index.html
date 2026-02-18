@@ -866,19 +866,22 @@ if ("serviceWorker" in navigator) {
 window.addEventListener("load", () => {
   const splash = document.getElementById("splash-screen");
 
+  // mostra logo suavemente
+  splash.classList.add("show");
+
   setTimeout(() => {
     splash.classList.add("splash-hide");
-
     setTimeout(() => splash.remove(), 600);
-
-  }, 700);
+  }, 1200);
 });
+
 </script>
 
 
 
 </body>
 </html>
+
 
 
 
