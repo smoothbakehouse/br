@@ -308,6 +308,7 @@ body {
   src: url('../../fonts/Nexa-Heavy.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -315,6 +316,7 @@ body {
   src: url('../../fonts/Regular.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -323,6 +325,7 @@ body {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  
 }
 
 @font-face {
@@ -338,6 +341,7 @@ body {
   src: url('../../fonts/agency.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
  }
 
        @font-face {
@@ -345,7 +349,8 @@ body {
   src: url('../../fonts/RobotoBold.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
-   }
+  font-display: swap;
+ }
 
    section {
   scroll-margin-top: 95px;
@@ -359,5 +364,6 @@ body {
 button:active {
   transform: scale(.97);
 }
+
 
 
