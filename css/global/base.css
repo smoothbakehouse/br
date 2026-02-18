@@ -244,9 +244,7 @@ img {
 #splash-screen img {
   width: 180px;
   max-width: 60%;
-  transform: translateY(10px);
-  opacity: 0;
-  animation: splashFade 0.6s ease forwards;
+  opacity: 1;
 }
 
 
@@ -378,6 +376,7 @@ body {
 button:active {
   transform: scale(.97);
 }
+
 
 
 
