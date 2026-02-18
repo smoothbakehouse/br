@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 
-  <title>Smooth17 — Bakehouse</title>
+  <title>Smooth18 — Bakehouse</title>
 
 
 <!-- FAVICON SVG (principal) -->
@@ -855,28 +855,29 @@ if ("serviceWorker" in navigator) {
 
 <!------------Splash intro app-->
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+
   const splash = document.getElementById("splash-screen");
 
-  // mostra o site quando DOM estiver pronto
+  // Espera todas as fontes carregarem
+  await document.fonts.ready;
+
+  // Mostra o site
   document.body.classList.add("loaded");
 
-  // anima e remove splash
-  setTimeout(() => {
-    splash.classList.add("splash-hide");
+  // Remove splash suavemente
+  splash.classList.add("splash-hide");
 
-    setTimeout(() => splash.remove(), 600);
-  }, 700);
+  setTimeout(() => splash.remove(), 600);
+
 });
 </script>
 
 
 
-
-
-
 </body>
 </html>
+
 
 
 
