@@ -226,6 +226,30 @@ img {
   pointer-events: none;
 }*/
 
+/* =========================
+   SPLASH PREMIUM
+========================= */
+
+#splash-screen {
+  position: fixed;
+  inset: 0;
+  background: #F7EFE6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity .5s ease;
+}
+
+#splash-screen img {
+  width: 180px;
+  max-width: 60%;
+  transform: translateY(10px);
+  opacity: 0;
+  animation: splashFade 0.6s ease forwards;
+}
+
+
 /* =========================================================
    OFFSET DE SCROLL — AJUSTE FINO
    ========================================================= */
@@ -354,6 +378,7 @@ body {
 button:active {
   transform: scale(.97);
 }
+
 
 
 
