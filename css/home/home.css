@@ -135,6 +135,8 @@
   max-width: 320px;
   border-radius: 12px;
   justify-self: center;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 
 
@@ -247,3 +249,4 @@
     transform: translateX(-0.45em);
   }
 }
+
