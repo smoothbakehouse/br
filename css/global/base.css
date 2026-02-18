@@ -195,7 +195,7 @@ img {
    SPLASH PREMIUM
 ========================= */
 
-#splash-screen {
+/*#splash-screen {
   position: fixed;
   inset: 0;
   background: #F7EFE6;
@@ -224,7 +224,7 @@ img {
 .splash-hide {
   opacity: 0;
   pointer-events: none;
-}
+}*/
 
 /* =========================================================
    OFFSET DE SCROLL — AJUSTE FINO
@@ -354,6 +354,7 @@ body {
 button:active {
   transform: scale(.97);
 }
+
 
 
 
