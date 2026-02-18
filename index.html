@@ -862,31 +862,25 @@ if ("serviceWorker" in navigator) {
 
 <!------------Splash intro app-->
 <script>
-document.addEventListener("DOMContentLoaded", async () => {
+window.addEventListener("load", () => {
   const splash = document.getElementById("splash-screen");
 
-  // garante que splash aparece imediatamente
-  splash.style.opacity = "1";
+  // garante que a home esteja pronta
+  setTimeout(() => {
 
-  // espera fontes carregarem
-  await document.fonts.ready;
+    splash.classList.add("splash-hide");
 
-  // mostra site
-  document.body.classList.add("loaded");
+    setTimeout(() => splash.remove(), 600);
 
-  // remove splash suavemente
-  splash.classList.add("splash-hide");
-  setTimeout(() => splash.remove(), 600);
+  }, 900); // tempo ideal para seu site
 });
 </script>
 
 
 
-
-
-
 </body>
 </html>
+
 
 
 
