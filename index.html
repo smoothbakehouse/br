@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 
-  <title>Smooth18 — Bakehouse</title>
+  <title>Smooth16 — Bakehouse</title>
 
 
 <!-- FAVICON SVG (principal) -->
@@ -25,6 +25,13 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+<!---Barra que era preta-->
+<meta name="theme-color" content="#F7EFE6">
+<meta name="msapplication-navbutton-color" content="#F7EFE6">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
 
 
 
@@ -856,30 +863,30 @@ if ("serviceWorker" in navigator) {
 <!------------Splash intro app-->
 <script>
 document.addEventListener("DOMContentLoaded", async () => {
-
   const splash = document.getElementById("splash-screen");
 
-  // Espera todas as fontes carregarem
+  // garante que splash aparece imediatamente
+  splash.style.opacity = "1";
+
+  // espera fontes carregarem
   await document.fonts.ready;
 
-  // Mostra o site
+  // mostra site
   document.body.classList.add("loaded");
 
-  // Remove splash suavemente
+  // remove splash suavemente
   splash.classList.add("splash-hide");
-
   setTimeout(() => splash.remove(), 600);
-
 });
 </script>
 
 
 
+
+
+
 </body>
 </html>
-
-
-
 
 
 
