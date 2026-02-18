@@ -302,48 +302,11 @@ body {
 */
 
 
-@font-face {
-  font-family: 'Summer';
-  src: url('../../fonts/summer.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-
-
-@font-face {
-  font-family: 'Austrisa Demo';
-  src: url('../../fonts/austria.otf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
 
 @font-face {
   font-family: 'Nexa Heavy';
   src: url('../../fonts/Nexa-Heavy.ttf') format('truetype');
   font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Nexa-Trial';
-  src: url('../../fonts/Nexa-Trial.otf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Nexa Extra Light';
-  src: url('fonts/Nexa-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NirmalaRegular';
-  src: url('fonts/Nirmala-Regular.ttf') format('truetype');
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -371,39 +334,11 @@ body {
   }
 
 @font-face {
-  font-family: 'Cottage and Farmhouse';
-  src: url('fonts/cottage.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
- }
-
-@font-face {
   font-family: 'Agency';
   src: url('../../fonts/agency.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
  }
-
-  @font-face {
-  font-family: 'Russo One';
-  src: url('../../fonts/RussoOne.ttf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-   }
-
-     @font-face {
-  font-family: 'BaronNeve';
-  src: url('../../fonts/BaronNeve.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-   }
-
-    @font-face {
-  font-family: 'Bebas Neve';
-  src: url('../../fonts/BebasNeue-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-   }
 
        @font-face {
   font-family: 'Roboto';
@@ -424,6 +359,5 @@ body {
 button:active {
   transform: scale(.97);
 }
-
 
 
