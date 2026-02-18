@@ -244,9 +244,23 @@ img {
 #splash-screen img {
   width: 180px;
   max-width: 60%;
-  opacity: 1;
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity .7s ease,
+    transform .7s cubic-bezier(.22,.61,.36,1);
 }
 
+#splash-screen.show img {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.splash-hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s ease;
+}
 
 /* =========================================================
    OFFSET DE SCROLL — AJUSTE FINO
@@ -376,6 +390,7 @@ body {
 button:active {
   transform: scale(.97);
 }
+
 
 
 
