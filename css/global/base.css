@@ -237,8 +237,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
-  transition: opacity .5s ease;
+  z-index: 99999;
+  opacity: 1;
+  transition: opacity .6s ease;
+  pointer-events: all;
 }
 
 #splash-screen img {
@@ -389,17 +391,6 @@ body {
 
 button:active {
   transform: scale(.97);
-}
-
-
-/*-----------Esconder piscada da home no app------------*/
-body {
-  opacity: 0;
-  transition: opacity .4s ease;
-}
-
-body.app-ready {
-  opacity: 1;
 }
 
 
