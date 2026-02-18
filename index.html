@@ -858,14 +858,18 @@ if ("serviceWorker" in navigator) {
 document.addEventListener("DOMContentLoaded", () => {
   const splash = document.getElementById("splash-screen");
 
+  // mostra o site quando DOM estiver pronto
+  document.body.classList.add("loaded");
+
+  // anima e remove splash
   setTimeout(() => {
     splash.classList.add("splash-hide");
 
     setTimeout(() => splash.remove(), 600);
   }, 700);
 });
-
 </script>
+
 
 
 
@@ -873,6 +877,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
 
 
