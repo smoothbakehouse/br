@@ -201,8 +201,8 @@ img {
 }
 
 #splash-screen img {
-  width: 200px;
-  max-width: 65%;
+  width: clamp(200px, 40vw, 320px);
+  max-width: 70%;
   opacity: 0;
   transform: translateY(8px);
   transition: opacity .6s ease, transform .6s ease;
@@ -364,6 +364,7 @@ body {
 body.app-ready {
   visibility: visible;
 }
+
 
 
 
