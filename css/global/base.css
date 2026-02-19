@@ -346,8 +346,13 @@ button:active {
   transform: scale(.97);
 }
 
+/*-----bug home app----*/
 body {
   visibility: hidden;
+}
+
+#splash-screen {
+  visibility: visible !important;
 }
 
 body.app-ready {
