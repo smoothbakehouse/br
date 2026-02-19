@@ -885,23 +885,33 @@ if ("serviceWorker" in navigator) {
 window.addEventListener("load", () => {
   const splash = document.getElementById("splash-screen");
 
-  // ⭐ mostra a página ANTES do splash sumir
-  document.body.classList.add("page-visible");
+  // mantém comportamento original
+  splash.classList.add("show");
 
   setTimeout(() => {
-    splash.style.opacity = "0";
 
-    setTimeout(() => splash.remove(), 600);
+    // inicia fade do splash
+    splash.classList.add("splash-hide");
 
-  }, 900);
+    // ⭐ ISOLAMENTO DA PISCADA (único ajuste)
+    document.body.classList.add("app-ready");
+
+    // remove splash após fade
+    setTimeout(() => {
+      splash.remove();
+    }, 700);
+
+  }, 1200); // tempo ORIGINAL que já funcionava
 });
 </script>
 
 
 
 
+
 </body>
 </html>
+
 
 
 
