@@ -393,7 +393,9 @@ button:active {
   transform: scale(.97);
 }
 
+/*-----piscada app----------*/
 
+html, body { background: #F7EFE6 !important; }
 
 
 
