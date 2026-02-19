@@ -866,20 +866,24 @@ if ("serviceWorker" in navigator) {
 window.addEventListener("load", () => {
   const splash = document.getElementById("splash-screen");
 
+  // mostra logo
   splash.classList.add("show");
 
+  // tempo total que a logo fica visível
   setTimeout(() => {
 
+    // começa fade da logo
     splash.classList.add("splash-hide");
 
-document.body.classList.add("page-visible"); // ⭐ ESTA LINHA
-	  
-    // libera página só depois que o fade começou
+    // entrada suave da home (atrasada para não engolir a logo)
     setTimeout(() => {
-      document.body.classList.add("app-ready");
+      document.body.classList.add("page-visible");
     }, 400);
 
-    setTimeout(() => splash.remove(), 1200);
+    // remove splash totalmente depois do fade
+    setTimeout(() => {
+      splash.remove();
+    }, 1200);
 
   }, 1200);
 });
@@ -887,6 +891,7 @@ document.body.classList.add("page-visible"); // ⭐ ESTA LINHA
 
 </body>
 </html>
+
 
 
 
