@@ -888,6 +888,10 @@ window.addEventListener("load", () => {
   splash.classList.add("show");
 
   setTimeout(() => {
+
+    // ⭐ libera a página antes do fade
+    document.body.classList.add("app-ready");
+
     splash.classList.add("splash-hide");
 
     setTimeout(() => {
@@ -900,10 +904,9 @@ window.addEventListener("load", () => {
 
 
 
-
-
 </body>
 </html>
+
 
 
 
