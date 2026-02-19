@@ -872,6 +872,8 @@ window.addEventListener("load", () => {
 
     splash.classList.add("splash-hide");
 
+document.body.classList.add("page-visible"); // ⭐ ESTA LINHA
+	  
     // libera página só depois que o fade começou
     setTimeout(() => {
       document.body.classList.add("app-ready");
@@ -885,6 +887,7 @@ window.addEventListener("load", () => {
 
 </body>
 </html>
+
 
 
 
