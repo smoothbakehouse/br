@@ -189,10 +189,6 @@ img {
   text-align: center;
 }
 
-/* =========================
-   SPLASH FINAL — ZERO FLICKER
-========================= */
-
 #splash-screen {
   position: fixed;
   inset: 0;
@@ -200,15 +196,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999999;
+  z-index: 99999;
+  transition: opacity .6s ease;
 }
 
 #splash-screen img {
-  width: clamp(200px, 28vw, 260px);
-  max-width: 70%;
+  width: 200px;
+  max-width: 65%;
   opacity: 0;
-  transform: translateY(6px);
-  transition: opacity .5s ease, transform .5s ease;
+  transform: translateY(8px);
+  transition: opacity .6s ease, transform .6s ease;
 }
 
 #splash-screen.show img {
@@ -218,7 +215,6 @@ img {
 
 .splash-hide {
   opacity: 0;
-  transition: opacity .9s ease;
 }
 
 /*-------fade home----------*/
@@ -366,6 +362,7 @@ body {
 body.app-ready {
   visibility: visible;
 }
+
 
 
 
