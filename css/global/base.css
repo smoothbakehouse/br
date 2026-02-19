@@ -190,7 +190,7 @@ img {
 }
 
 /* =========================
-   SPLASH PREMIUM
+   SPLASH FINAL — ZERO FLICKER
 ========================= */
 
 #splash-screen {
@@ -200,26 +200,22 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99999;
-  opacity: 1;
-  transition: opacity .6s ease;
-  pointer-events: all;
+  z-index: 999999;
 }
 
 #splash-screen img {
   width: 180px;
   max-width: 60%;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+
+#splash-screen.show img {
   opacity: 1;
   transform: translateY(0);
-  transition:
-    opacity .7s ease,
-    transform .7s cubic-bezier(.22,.61,.36,1);
 }
-.splash-hide {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .6s ease;
-}
+
 
 /* =========================================================
    OFFSET DE SCROLL — AJUSTE FINO
@@ -348,6 +344,14 @@ body {
 
 button:active {
   transform: scale(.97);
+}
+
+body {
+  visibility: hidden;
+}
+
+body.app-ready {
+  visibility: visible;
 }
 
 
