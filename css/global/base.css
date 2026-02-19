@@ -221,6 +221,18 @@ img {
   transition: opacity .9s ease;
 }
 
+/*-------fade home----------*/
+body {
+  opacity: 0;
+  transition: opacity .9s ease;
+}
+
+body.page-visible {
+  opacity: 1;
+}
+
+
+
 /* =========================================================
    OFFSET DE SCROLL — AJUSTE FINO
    ========================================================= */
@@ -362,6 +374,7 @@ body {
 body.app-ready {
   visibility: visible;
 }
+
 
 
 
