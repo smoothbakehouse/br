@@ -351,14 +351,21 @@ button:active {
 }
 
 /*-----bug home app----*/
+/* ===== ISOLAMENTO DO RENDER DO APP ===== */
+
 body {
-  opacity: 0;
-  transition: opacity .6s ease;
+  visibility: hidden;
 }
 
-body.page-visible {
-  opacity: 1;
+#splash-screen {
+  visibility: visible !important;
 }
+
+body.app-ready {
+  visibility: visible;
+}
+
+
 
 
 
