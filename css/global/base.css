@@ -204,8 +204,8 @@ img {
 }
 
 #splash-screen img {
-  width: 180px;
-  max-width: 60%;
+  width: clamp(200px, 28vw, 260px);
+  max-width: 70%;
   opacity: 0;
   transform: translateY(6px);
   transition: opacity .5s ease, transform .5s ease;
@@ -216,6 +216,10 @@ img {
   transform: translateY(0);
 }
 
+.splash-hide {
+  opacity: 0;
+  transition: opacity .9s ease;
+}
 
 /* =========================================================
    OFFSET DE SCROLL — AJUSTE FINO
@@ -358,6 +362,7 @@ body {
 body.app-ready {
   visibility: visible;
 }
+
 
 
 
