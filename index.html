@@ -885,16 +885,13 @@ if ("serviceWorker" in navigator) {
 window.addEventListener("load", () => {
   const splash = document.getElementById("splash-screen");
 
-  setTimeout(() => {
+  // ⭐ mostra a página ANTES do splash sumir
+  document.body.classList.add("page-visible");
 
+  setTimeout(() => {
     splash.style.opacity = "0";
 
-    // ⭐ mostra a página junto com o fade do splash
-    document.body.classList.add("page-visible");
-
-    setTimeout(() => {
-      splash.remove();
-    }, 600);
+    setTimeout(() => splash.remove(), 600);
 
   }, 900);
 });
@@ -902,8 +899,10 @@ window.addEventListener("load", () => {
 
 
 
+
 </body>
 </html>
+
 
 
 
