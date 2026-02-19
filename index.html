@@ -866,22 +866,26 @@ if ("serviceWorker" in navigator) {
 window.addEventListener("load", () => {
   const splash = document.getElementById("splash-screen");
 
-  // mostra logo imediatamente
   splash.classList.add("show");
 
-  // libera página só depois
   setTimeout(() => {
-    document.body.classList.add("app-ready");
 
-    splash.style.opacity = "0";
+    splash.classList.add("splash-hide");
 
-    setTimeout(() => splash.remove(), 500);
-  }, 900);
+    // libera página só depois que o fade começou
+    setTimeout(() => {
+      document.body.classList.add("app-ready");
+    }, 400);
+
+    setTimeout(() => splash.remove(), 1200);
+
+  }, 1200);
 });
 </script>
 
 </body>
 </html>
+
 
 
 
