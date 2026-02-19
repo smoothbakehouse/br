@@ -222,14 +222,6 @@ img {
 }
 
 /*-------fade home----------*/
-body {
-  opacity: 0;
-  transition: opacity .9s ease;
-}
-
-body.page-visible {
-  opacity: 1;
-}
 
 
 
@@ -374,6 +366,7 @@ body {
 body.app-ready {
   visibility: visible;
 }
+
 
 
 
