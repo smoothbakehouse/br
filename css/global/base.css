@@ -351,17 +351,8 @@ button:active {
 }
 
 /*-----bug home app----*/
-body {
-  visibility: hidden;
-}
 
-#splash-screen {
-  visibility: visible !important;
-}
 
-body.app-ready {
-  visibility: visible;
-}
 
 
 
