@@ -351,6 +351,16 @@ button:active {
 }
 
 /*-----bug home app----*/
+body {
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+
+body.page-visible {
+  opacity: 1;
+}
+
+
 
 
 
