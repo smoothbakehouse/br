@@ -2,6 +2,26 @@
 <html lang="pt-BR" data-theme="rose">
 <head>
 
+	
+	<style>
+#splash-screen {
+  position: fixed;
+  inset: 0;
+  background: #F7EFE6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+}
+
+#splash-screen img {
+  width: 200px;
+  max-width: 65%;
+}
+</style>
+
+
+
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <meta charset="UTF-8" />
@@ -51,18 +71,15 @@
 <style>
   body { background: #F7EFE6; }
 </style>
-
-
+	
 </head>
 
 <body>  <!-- versão sem padrão elipse -->
 
  <!-- SPLASH PREMIUM -->
-<div id="splash-screen">
-  <img src="img/logo-off.svg" alt="Logo Smooth">
+	<div id="splash-screen">
+  <img src="img/logo-off.svg" alt="Smooth">
 </div>
-
-
 	
   <!-- MINI CART DESKTOP (NOVO CHECKOUT) -->
 <div class="sc-mini-cart" id="miniCart">
@@ -884,6 +901,7 @@ window.addEventListener("load", () => {
 
 </body>
 </html>
+
 
 
 
