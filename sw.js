@@ -1,6 +1,6 @@
 const DEV_MODE = true; // 🔴 coloque false quando publicar
 
-const CACHE_NAME = "smooth-cache-v16";
+const CACHE_NAME = "smooth-cache-v17";
 
 const FILES_TO_CACHE = [
   "/",
@@ -11,8 +11,8 @@ const FILES_TO_CACHE = [
   "css/global/base.css",
   "css/theme/theme.css",
 
-  "img/icons/icone-smooth15.png",
-  "img/icons/icone-maskable15.png"
+  "img/icons/icone-smooth.png",
+  "img/icons/icone-maskable.png"
 ];
 
 
@@ -92,3 +92,4 @@ self.addEventListener("fetch", event => {
     })
   );
 });
+
