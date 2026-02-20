@@ -2,7 +2,7 @@
 /* Este arquivo define padrões universais usados pelo site todo. */
 /* Nada aqui deve ser específico de header, home, cookies, etc.  */
 html {
-  background: #F7EFE6;
+  background-color: #F7EFE6 !important;
 }
 
 
@@ -367,6 +367,7 @@ body {
 body.app-ready {
   visibility: visible;
 }
+
 
 
 
