@@ -13,7 +13,7 @@
 html, body {
   font-family: "Poppins", sans-serif;
   color: var(--text);
-  background: #F7EFE6;
+  background: var(--background);
   line-height: 1.6;
   overflow-x: hidden; /* evita scroll lateral */
 }
@@ -364,6 +364,7 @@ body {
 body.app-ready {
   visibility: visible;
 }
+
 
 
 
