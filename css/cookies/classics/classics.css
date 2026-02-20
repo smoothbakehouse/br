@@ -118,7 +118,22 @@
 
 .cookie-card h4 {
   font-family: 'Agency';
-  font-size: clamp(2.7rem, 7vw, 3.2rem);
+
+  /* ORIGINAL */
+  /* font-size: clamp(2.7rem, 7vw, 3.2rem); primeiro */
+
+  /* 🔽 10% MENOR */
+  /* font-size: clamp(2.4rem, 6.3vw, 2.9rem); */
+
+  /* 🔽 15% MENOR */
+   /*font-size: clamp(2.3rem, 6vw, 2.7rem);*/
+
+  /* 🔽 20% MENOR */
+  /*font-size: clamp(2.1rem, 5.6vw, 2.5rem);*/
+
+ /* 🔽 Personalizado */
+   font-size: clamp(2.5rem, 6.3vw, 3.0rem);
+
   color: var(--brown);
   margin-bottom: 0.5rem;
 }
